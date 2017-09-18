@@ -12,6 +12,7 @@
     <title>Tugiwa - Task and schedule management tool</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tugiwa.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="40">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -32,23 +33,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Bootstrap theme</a>
+          <a class="navbar-brand" href="#">
+            <span>
+              <img alt="Brand"
+                   src="img/tugiwa-app-icon-29.png"
+                   srcset="img/tugiwa-app-icon-29.png 1x,
+                           img/tugiwa-app-icon-29@2x.png 2x">
+            </span>
+            Tugiwa
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#top">Top</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Japanese</a></li>
               </ul>
             </li>
           </ul>
@@ -56,17 +61,57 @@
       </div>
     </nav>
 
-    <div class="container" role="main">
+    <section id="top">
 
-      <div class="jumbotron">
-        <h1>Tugiwa</h1>
-        <p>comming soon</p>
+      <div class="container" role="main">
+        
+        <div class="jumbotron">
+          <h1>Tugiwa</h1>
+          <p>comming soon</p>
+        </div>
+
+        <div style="height: 800px; background-color: #eee">
+          big text
+        </div>
       </div>
 
-    </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <h1>Privacy Policy</h1>
+
+        <div style="height: 800px; background-color: #eee">
+          big text
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h1>About</h1>
+
+        <div style="height: 800px; background-color: #eee">
+          big text
+        </div>
+
+      </div>
+    </section>
+
+    <section id="Contact">
+      <div class="container">
+        <h1>Contact</h1>
+
+        <div style="height: 800px; background-color: #eee">
+          big text
+        </div>
+
+      </div>
+    </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/tugiwa.js"></script>
   </body>
 </html>

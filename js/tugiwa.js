@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-  var offset = 80;
+  var offset = 70;
 
   $('.navbar li a').click(function(event) {
     event.preventDefault();

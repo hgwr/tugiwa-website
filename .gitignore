@@ -1,13 +1,4 @@
 *~
 .DS_Store
-
 tmp
 *.log
-
-# bundler
-/vendor/bundle
-
-# jekyll 
-_site
-.sass-cache
-.jekyll-metadata

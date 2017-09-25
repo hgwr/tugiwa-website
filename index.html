@@ -66,8 +66,13 @@
       <div class="container" role="main">
         
         <div class="jumbotron">
-          <h1>Tugiwa</h1>
-          <p>タスク管理 iOS アプリ</p>
+          <div class="media-body media-middle">
+            <h1 class="media-heading">Tugiwa</h1>
+            <p>タスク管理 iOS アプリ</p>
+          </div>
+          <div class="media-right media-middle">
+            <img src="img/tugiwa-app-icon-transparent-256.png" alt="Tugiwa App Icon">
+          </div>
         </div>
 
         <div class="media">
@@ -197,7 +202,7 @@
           </div>
         </div>
             
-        <h3>設定 Tab</h3>
+        <h4>設定 Tab</h4>
 
         <ul>
           <li>Tugiwa app で使用するカレンダー、リマインダーのリスト、休日用のカレンダーを設定できます。</li>
@@ -214,7 +219,7 @@
 
     <section id="privacy">
       <div class="container">
-        <h1>Privacy Policy</h1>
+        <h2>Privacy Policy</h2>
 
         <p>
           iOS Tugiwa app を使うと、リマインダーやカレンダーのデータを統合して取り扱い、個人のタスク管理を便利に行うことができます。
@@ -222,14 +227,18 @@
         </p>
 
         <p>
-          Tugiwa app は、 iOS を通してお客様のリマインダーとカレンダーのデータにアクセスします。
+          Tugiwa app は、 iOS 通してリマインダーとカレンダーのデータにアクセスします。
           そのため、Tugiwa app 初回起動時にリマインダーとカレンダーのデータへのアクセスの許可を求めます。
           このアクセス許可については、 iOS の設定アプリ内でいつでも変更できます。
         </p>
 
         <p>
-          また Tugiwa app がアクセスしたリマインダーとカレンダーのデータは、 iOS Tugiwa app の中でしか利用しません。
-          Tugiwa app が外部サイトにお客様のデータを送信したりすることはありません。
+          Tugiwa app は、リマインダーとカレンダーのデータを Tugiwa app の中でのみ利用します。
+          前述の通り、 Tugiwa app は iOS を通してリマインダーとカレンダーのデータにアクセスします。
+          具体的には、Tugiwa app は Apple の提供している  EventKit API を使用しています。
+          結果的として、Tugiwa app はお客様がお使いの iCloud や外部のカレンダーサービスにアクセスすることになります。
+          しかし、Tugiwa app は以下の様なことはしません。
+          たとえば、Tugiwa app はお客様のデータを収集したりすることはありませんし、 お客様がご利用していない外部サイトにお客様のデータを送信したりすることもありません。
         </p>
 
       </div>
@@ -237,27 +246,37 @@
 
     <section id="about">
       <div class="container">
-        <h1>About</h1>
+        <h2>About</h2>
 
-        <div style="height: 800px; background-color: #eee">
-          big text
-        </div>
+        <p>
+          監修 上保秀夫
+        </p>
+        <p>
+          制作 萩原茂
+        </p>
 
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
-        <h1>Contact</h1>
+        <h2>Contact</h2>
 
-        <div style="height: 800px; background-color: #eee">
-          big text
-        </div>
+        <p>
+          お問い合わせ: tugiwa@moreslowly.jp
+        </p>
 
       </div>
     </section>
 
     <section id="Footer">
+      <div class="container">
+        <div class="row">
+          <div class="pull-right">
+            &copy; moreslowly.jp 2017
+          </div>
+        </div>
+      </div>
     </section>
 
 

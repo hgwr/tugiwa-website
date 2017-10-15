@@ -8,6 +8,12 @@ jQuery(document).ready(function($) {
       $(this).blur();
       $($(this).attr('href'))[0].scrollIntoView();
       scrollBy(0, -offset);
+
+      if ($('.icon-bar').is(":visible")) {
+        setTimeout(function() {
+          $('.navbar-toggle').click()
+        }, 100);
+      }
     }
   });
 
